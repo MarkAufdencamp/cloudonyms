@@ -8,7 +8,7 @@ Django==1.4
 #MySQL Driver
 MySQL-python
 #SQLite Driver
-sqlite3
+pysqlite
 
 #Test Harness
 # Py-2.6 compatibility with Py-2.7/Py-3.3 UnitTest
