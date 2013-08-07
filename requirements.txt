@@ -1,0 +1,39 @@
+# sudo pip install -r requirements.txt --upgrade
+# Virtual Environment
+virtualenv
+virtualenvwrapper
+pythonbrew
+#Django MVC Framework
+Django==1.4
+#MySQL Driver
+MySQL-python
+#SQLite Driver
+sqlite3
+
+#Test Harness
+# Py-2.6 compatibility with Py-2.7/Py-3.3 UnitTest
+unittest2
+factory_boy
+django-faker
+selenium
+# Gherking/Cucumber BDD
+behave
+
+# libxml2
+#libxml2-python
+
+#HAML
+hamlpy
+
+#SASS SCSS
+#sass
+
+# AWS Access
+boto
+
+# M$ Azure
+azure
+
+# Rackspace
+
+# Linode
