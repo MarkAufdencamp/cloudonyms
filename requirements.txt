@@ -4,7 +4,7 @@ virtualenv
 virtualenvwrapper
 pythonbrew
 #Django MVC Framework
-Django==1.4
+Django==1.5.1
 #MySQL Driver
 MySQL-python
 #SQLite Driver
