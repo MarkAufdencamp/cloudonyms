@@ -22,6 +22,6 @@ def step_impl(context):
 
 @then(u'I should be on the landing page')
 def step_impl(context):
-    assertIn('cloudonyms.com', context.browser.title)
+    assert('cloudonyms.com' in context.browser.title)
     context.browser.quit()
 
