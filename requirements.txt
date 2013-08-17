@@ -1,12 +1,40 @@
-# sudo pip install -r requirements.txt --upgrade
-# Virtual Environment
+# Usage:
+#	sudo pip install -r requirements.txt --upgrade
+#########################################################################################################
+# Virtual Environment:
+#	pyenv
+#########################################################################################################
+# Install pyenv - 
+#	sudo easy_install pip
+#	sudo pip install virtualenv
+#	sudo pip install virtualenvwrapper
+#	git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+#	git clone git:://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+#	git clone git:://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
+#	nano ~/.profile
+#		export PATH=$HOME/.pyenv/bin:$PATH
+#		eval “$(pyenv init - )”
+#
+# Install Python - 
+#	pyenv install 2.7.5
+#	pyenv rehash
+#
+# Create and Use Virtual Environment - 
+#	pyenv local 2.7.5
+#	pyenv virtualenv myprojvirtualenv
+#	pyenv local myprojvirtualenv
+#
+#########################################################################################################
+#########################################################################################################
 virtualenv
 virtualenvwrapper
-pythonbrew
+
 #Django MVC Framework
 Django==1.5.1
+
 #MySQL Driver
 MySQL-python
+
 #SQLite Driver
 pysqlite
 
@@ -20,13 +48,31 @@ selenium
 behave
 
 # libxml2
-#libxml2-python
+lxml
 
 #HAML
 hamlpy
 
 #SASS SCSS
 #sass
+
+#Markdown
+markdown
+
+#YAML
+PyYAML
+
+#Django Filter
+django-filter
+
+#Django Rest Framework
+djangorestframework
+
+#OAuth2 Provider
+django-oauth2-provider
+
+#Stomp
+stomp.py
 
 # AWS Access
 boto
