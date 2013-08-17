@@ -1,3 +1,5 @@
+import unittest2 as unittest
+from selenium import webdriver
 
 #############################################
 @given(u'I am on the signup page')
