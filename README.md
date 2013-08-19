@@ -2,7 +2,7 @@
 ## Production Environment Construction
 ### Base Server
 Ubuntu 12.04 LTS
-# ssh root@198.74.53.74
+ssh root@198.74.53.74
 '''
 echo "inet-srvr-02.iluviya.net" >> /etc/hostname
 hostname -F /etc/hostname
