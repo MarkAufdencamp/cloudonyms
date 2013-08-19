@@ -24,6 +24,28 @@
 #	pyenv virtualenv myprojvirtualenv
 #	pyenv local myprojvirtualenv
 #
+# Create initial django project structure
+# 	pip install django
+# 	django-admin.py startproject cloudonyms
+# 	python manage.py startserver
+#
+# Create Git repository
+# 	git init .
+# 	echo "*.pyc" > .gitignore
+#	touch README.md
+# 	git add *
+# 	git commit -m "Initial Project Repository"
+#
+# Create GitHub/GitoLite project
+#
+# Add GitHub/GitoLite upstream remote
+#	git remote add origin git://github.com/MarkAufdencamp/cloudonyms
+#					-or-
+#	git remote add origin https://github.com/MarkAufdencamp/cloudonyms
+#
+# Push code to GitHub/GitoLite
+#	git push origin master
+#
 #########################################################################################################
 #########################################################################################################
 virtualenv
