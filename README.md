@@ -1,4 +1,4 @@
-# Cloudonyms - Cloud Management Panel
+# Cloudonyms - Cloud Management
 ## Production Environment Construction
 ### Base Server
 Ubuntu 12.04 LTS
@@ -6,8 +6,8 @@ ssh root@198.74.53.74
 
 1. Configure Hostname
 
-	echo "inet-srvr-02.iluviya.net" >> /etc/hostname
-	hostname -F /etc/hostname
+*	echo "inet-srvr-02.iluviya.net" >> /etc/hostname
+*	hostname -F /etc/hostname
 
 2. Configure Timezone
 
