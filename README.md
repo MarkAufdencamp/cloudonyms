@@ -58,7 +58,7 @@
 	service puppet start
 #### Run puppet local agent
 	puppet agent --test	
-### Production Application - cloudonyms.com/www.cloudonyms.com
+### Production Application - cloudonyms.com - www.cloudonyms.com
 #### Production Application VirtualHost Account
 #### Production Application MySQL Database Account
 #### Production Application Backup/Restore
@@ -140,7 +140,7 @@
 ### Redmine Backup/Restore
 ### Nagios Backup/Restore
 ### MRTG Backup/Restore
-## Developer and Operations Knowledge Base
+## Developer and Operations Roles
 ### Graphic and UX Designer
 #### Photoshop
 #### Wire Framing
@@ -230,6 +230,6 @@
 ##### Bing
 ###### WebMaster Tools
 ###### SEO
-#### Yahoo
-##### WebMaster Tools
-##### SEO
+##### Yahoo
+###### WebMaster Tools
+###### SEO
