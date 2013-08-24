@@ -47,6 +47,20 @@
 #	git push origin master
 #
 #########################################################################################################
+# mkdir assets
+#########################################################################################################
+# mkdir assets/javascripts
+# cd assets/javascripts
+# git clone https://github.com/jquery/jquery.git
+# git clone https://github.com/douglascrockford/JSON-js.git
+# git clone https://github.com/jashkenas/underscore.git
+# git clone https://github.com/jashkenas/backbone.git
+# git clone https://github.com/LearnBoost/socket.io.git
+# git clone https://github.com/ajf8/backbone.stompbind.git
+# git clone https://github.com/jmesnil/stomp-websocket.git
+#########################################################################################################
+# mkdir assest/stylesheets
+#
 #########################################################################################################
 virtualenv
 virtualenvwrapper
