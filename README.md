@@ -19,6 +19,7 @@
 ##### Rails BDDTDD - Cucumber, RSpec, Factory-girl, faker
 ##### Firefox
 ##### Selenium
+##### JMeter
 #### VCS
 ##### Project Checkout
 ##### Project Commit
@@ -67,6 +68,14 @@
 #### Production CDN VirtualHost Account
 #### Production CDN Backup/Restore
 #### Production CDN Deployment
+### Production Services
+#### Apache/Passenger
+#### MySQL
+#### PostgreSQL
+#### ActiveMQ
+#### Postfix
+#### Dovecot
+### Cron
 ## Continuous Integration and Staging Environment Construction
 ### Base Server - Ubuntu 12.04 LTS - inet-srvr-01.iluviya.net
 	# Download and install server root ssh key
