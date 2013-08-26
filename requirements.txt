@@ -67,6 +67,7 @@ virtualenvwrapper
 
 #Django MVC Framework
 Django==1.5.1
+South
 
 #MySQL Driver
 MySQL-python
