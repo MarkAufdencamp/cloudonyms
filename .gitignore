@@ -1,1 +1,11 @@
 *.pyc
+assets/frameworks/
+assets/javascripts/backbone
+assets/javascripts/backbone.stompbind
+assets/javascripts/jquery
+assets/javascripts/jquery-ui
+assets/javascripts/JSON-js
+assets/javascripts/openlayers
+assets/javascripts/socket.io
+assets/javascripts/stomp-websocket
+assets/javascripts/underscore
