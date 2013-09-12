@@ -8,29 +8,61 @@
 
 {% load staticfiles %}
 		
-		<!-- Style Sheets -->
-		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}assets/stylesheets/cloudonyms.css"></link>
+		<!-- Framework Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}assets/frameworks/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}assets/frameworks/dist/css/bootstrap-theme.min.css" />
+		<!-- Application Style -->
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}assets/stylesheets/cloudonyms.css" />
 		
-		<!-- JavaScript Libraries -->
+		<!-- Framework JavaScript Libraries -->
+		<script type="text/javascript" src="{{ STATIC_URL }}assets/frameworks/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/jquery/src/jquery.js"></script>
+		<!-- JavaScript Libraries -->
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/JSON-js/json2.js"></script>
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/underscore/underscore.js"></script>
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/backbone/backbone.js"></script>
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/socket.io/lib/socket.js"></script>
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/stomp-websocket/dist/stomp.js"></script>
+		<!--
+		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/openlayers/lib/OpenLayers.js"></script>
+		-->
 		<!-- Application Javacript -->
 		<script type="text/javascript" src="{{ STATIC_URL }}assets/javascripts/cloudonyms-javascript/cloudonyms.js"></script>
 		<script type="text/javascript">
-				var myServers = new Cloudonyms.servers;			
+				var myCloudonyms = CLOUDONYMS;
+				var myNetworks = myCloudonyms.networks;
+				var myServers = myCloudonyms.servers;	
+				var myDomains = myCloudonyms.domains;
+				var myServiceProviders = myCloudonyms.serviceProviders;		
 		</script>
 		<script type="text/javascript">
 			window.onload = function(){
-			}
+				
+			};
 		</script>
 	</head>
 	<body>
 		<header id="header"><h1>Cloudonyms</h1></header>
 		<section id="signin-signup"></section>
+		<section id="mainMenu">
+			<ul id="menu" class="nav navbar-nav">
+				<li>
+					<a href="javascript:void(0)"  onclick="myCloudonyms.mainMenu.networks();">Networks</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="myCloudonyms.mainMenu.servers();">Servers</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="myCloudonyms.mainMenu.domains();">Domains</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="myCloudonyms.mainMenu.serviceProviders();">Service Providers</a>
+				</li>
+			</ul>
+		</section>
+		<section id="console">
+			
+		</section>
 		<footer id="footer">Copyright 2013 Mark Aufdencamp</footer>
 	</body>
 </html>
