@@ -1,0 +1,14 @@
+#header {
+	text-align: center;
+	width: 60em;
+	}
+#menu li {
+	width: 15em;
+	text-align: center;
+	}
+#console {
+	min-height: 40ex;
+	}
+#footer {
+	clear: both;
+	}
