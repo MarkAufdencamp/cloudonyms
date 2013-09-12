@@ -47,39 +47,82 @@
 #	git push origin master
 #
 #########################################################################################################
+# Assets:
+#########################################################################################################
 # mkdir assets
 #########################################################################################################
 # mkdir assets/javascripts
 # cd assets/javascripts
 # git clone https://github.com/jquery/jquery.git
+# git clone https://github.com/jquery/jquery-ui.git
 # git clone https://github.com/douglascrockford/JSON-js.git
 # git clone https://github.com/jashkenas/underscore.git
 # git clone https://github.com/jashkenas/backbone.git
 # git clone https://github.com/LearnBoost/socket.io.git
 # git clone https://github.com/ajf8/backbone.stompbind.git
 # git clone https://github.com/jmesnil/stomp-websocket.git
+# git clone https://github.com/openlayers/openlayers.git
+cd ../..
+#########################################################################################################
+# mkdir assets/frameworks
+# cd assets/frameworks
+# Bootstrap requires compilking of Less to CSS when in source distro
+# git clone https://github.com/twbs/bootstrap.git
+# wget https://github.com/twbs/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip
+# unzip bootstrap-3.0.0-dist.zip
+# cd ../..
 #########################################################################################################
 # mkdir assest/stylesheets
+# cd assets/stylesheets
+#
+# cd ../..
 #########################################################################################################
 #
 #########################################################################################################
-# Javascript Test Harness 
+# Javascript Test Harness:
 #########################################################################################################
 # git clone https://github.com/pivotal/jasmine.git -b 1_3_x
+#########################################################################################################
+#
+#########################################################################################################
+# Dependent Native Libraries
+#########################################################################################################
+# MySQL Client Dev - MySQL-python
+# PostgreSQL Client Dev - psycopg
+# SQLite Dev - pysqlite
+# xml2 Dev - lxml
+# xslt Dev - lxml
+# yaml Dev - PyYAML
+# GEOS Dev - geodjango - django.contrib.gis - INSTALLED_APPS
+#########################################################################################################
+# Recommended Native Libraries
+#########################################################################################################
+# PostgreSQL Server, PostGIS - geodjango - django.contrib.gis - INSTALLED_APPS
+# Projections - geodjango - django.contrib.gis - INSTALLED_APPS
+# GDAL - geodjango - django.contrib.gis - INSTALLED_APPS
+# KML - geodjango - django.contrib.gis - INSTALLED_APPS
+# TIFF/GeoTIFF - geodjango - django.contrib.gis - INSTALLED_APPS
+# OSSIM - geodjango - django.contrib.gis - INSTALLED_APPS
 #########################################################################################################
 
 virtualenv
 virtualenvwrapper
 
 #Django MVC Framework
-Django==1.5.1
+Django==1.5.3
 South
 
 #MySQL Driver
 MySQL-python
 
+#PostgreSQL Driver
+psycopg2
+
 #SQLite Driver
 pysqlite
+
+# Documentation
+docutils
 
 #Test Harness
 # Py-2.6 compatibility with Py-2.7/Py-3.3 UnitTest
