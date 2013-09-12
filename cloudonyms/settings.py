@@ -12,8 +12,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/Users/maaufden/Documents/Aptana-RadRails-Workspace/cloudonyms/sqlite.db',                      # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
+        #'NAME': '/Users/maaufden/Documents/Aptana-RadRails-Workspace/cloudonyms/sqlite.db',                      # Or path to database file if using sqlite3.
+         'NAME': '/home/hostmaster/Documents/Aptana-Radrails-Workspace/cloudonyms/sqlite.db',                      # Or path to database file if using sqlite3.
+       # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
@@ -73,7 +74,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/maaufden/Documents/Aptana-RadRails-Workspace/cloudonyms/assets/',
+    #'/Users/maaufden/Documents/Aptana-RadRails-Workspace/cloudonyms/assets/',
+    '/home/hostmaster/Documents/Aptana-Radrails-Workspace/cloudonyms/assets/',
 )
 
 # List of finder classes that know how to find static files in
@@ -124,9 +126,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
     'south',
+    'django.contrib.gis',
 )
 
 # A sample logging configuration. The only tangible logging
