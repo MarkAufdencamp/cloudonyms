@@ -62,7 +62,7 @@
 # git clone https://github.com/ajf8/backbone.stompbind.git
 # git clone https://github.com/jmesnil/stomp-websocket.git
 # git clone https://github.com/openlayers/openlayers.git
-cd ../..
+# cd ../..
 #########################################################################################################
 # mkdir assets/frameworks
 # cd assets/frameworks
