@@ -1,4 +1,8 @@
 # Django settings for cloudonyms project.
+import os.path
+import cloudonyms
+
+PROJECT_DIR =  os.path.realpath(os.path.join(os.path.dirname(cloudonyms.__file__),'../'))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -13,7 +17,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         #'NAME': '/Users/maaufden/Documents/Aptana-RadRails-Workspace/cloudonyms/sqlite.db',                      # Or path to database file if using sqlite3.
-         'NAME': '/home/hostmaster/Documents/Aptana-Radrails-Workspace/cloudonyms/sqlite.db',                      # Or path to database file if using sqlite3.
+         'NAME': os.path.join( PROJECT_DIR, 'sqlite.db'),                      # Or path to database file if using sqlite3.
        # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -75,7 +79,7 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     #'/Users/maaufden/Documents/Aptana-RadRails-Workspace/cloudonyms/assets/',
-    '/home/hostmaster/Documents/Aptana-Radrails-Workspace/cloudonyms/assets/',
+    os.path.join( PROJECT_DIR, 'assets'),
 )
 
 # List of finder classes that know how to find static files in
@@ -115,6 +119,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join( PROJECT_DIR, 'cloudonyms/views'),
 )
 
 INSTALLED_APPS = (
