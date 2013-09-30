@@ -111,6 +111,7 @@ virtualenvwrapper
 #Django MVC Framework
 Django==1.5.3
 South
+django-extensions
 
 #MySQL Driver
 MySQL-python
